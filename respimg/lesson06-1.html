@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Understanding Responsive Images - Lesson 6.1</title>
+
+	<!-- Styles -->
+	<style>
+		.image {
+			background: transparent url(img/desktop.jpg) no-repeat top left;
+			width: 1024px;
+			height: 564px;
+			max-width: 100%;
+			background-size: 100% auto;
+		}
+
+		@media only screen and (min-width: 768px) {
+			.image-2 {
+				background: transparent url(img/desktop.jpg) no-repeat top left;
+				width: 1024px;
+				height: 564px;
+				max-width: 100%;
+				background-size: 100% auto;
+			}
+		}
+
+		@media only screen and (max-width: 768px) {
+			.image-2 {
+				background: transparent url(img/tablet.jpg) no-repeat top left;
+				width: 1024px;
+				height: 423px;
+				max-width: 100%;
+				background-size: 100% auto;
+			}
+		}
+
+		@media only screen and (max-width: 320px) {
+			.image-2 {
+				background: transparent url(img/mobile.jpg) no-repeat top left;
+				width: 320px;
+				height: 176px;
+				max-width: 100%;
+				background-size: 100% auto;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="image"></div>
+
+	<div class="image-2"></div>
+
+</body>
+</html>
